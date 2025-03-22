@@ -26,19 +26,21 @@
             android:id="@+id/task_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
             android:padding="8sp"
-            android:textSize="16sp"
-            android:text="@{task.taskName}"/>
+            android:text="@{task.taskName}"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/task_done"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:clickable="false"
+            android:fontFamily="@font/akronim"
             android:padding="8dp"
             android:text="Done?"
-            android:textSize="16sp"
-            android:checked="@{task.taskDone}"/>
+            android:textSize="24sp" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

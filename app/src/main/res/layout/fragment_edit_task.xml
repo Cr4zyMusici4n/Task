@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".EditTaskFragment">
 
@@ -20,6 +21,7 @@
             android:id="@+id/task_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/akronim"
             android:inputType="text"
             android:text="@={viewModel.task.taskName}"
             android:textSize="16sp" />
@@ -36,16 +38,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="#1F1E1E"
+            android:fontFamily="@font/akronim"
             android:onClick="@{() -> viewModel.updateTask()}"
-            android:text="Update Task" />
+            android:text="Update Task"
+            android:textSize="20sp"
+            app:icon="@drawable/baseline_update_24" />
 
         <Button
             android:id="@+id/delete_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="#1F1E1E"
+            android:fontFamily="@font/akronim"
             android:onClick="@{() -> viewModel.deleteTask()}"
-            android:text="Delete Task" />
+            android:text="Delete Task"
+            android:textSize="20sp"
+            app:icon="@drawable/baseline_delete_outline_24" />
 
     </LinearLayout>
 </layout>
